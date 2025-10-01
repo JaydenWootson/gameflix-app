@@ -1,0 +1,81 @@
+body.register {
+    background: url("img/game-collage.jpg") no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .overlay {
+    background: rgba(0,0,0,0.7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .registration-container h2 {
+    color: #111;
+    font-weight: bold;
+    font-size: 2.2rem; /* slightly bigger heading */
+  }
+  
+  .registration-container label,
+  .registration-container .form-check-label {
+    color: #222; 
+    font-size: 1rem;
+  }  
+  
+  .registration-container a {
+    color: #0066cc;       /* optional: make links stand out */
+    text-decoration: none;
+  }
+  
+
+  .btn-group {
+    margin-top: 2rem;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background: #e50914; /* Netflix-style red */
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #b20710;
+  }
+  
+  .btn-alt {
+    background: #333;
+  }
+  
+  .btn-alt:hover {
+    background: #111;
+  }
+
+  .registration-container .card {
+    max-width: 700px;              /* wider than default */
+    width: 80%;                    /* scales on smaller screens */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    padding: 2rem;
+  }
+  
+  .registration-container .card-body {
+    padding: 3rem 2rem;
+  }
+
+    .registration-container input[type="text"],
+    .registration-container input[type="email"],
+    .registration-container input[type="password"] {
+        padding: 0.85rem;
+        font-size: 1rem;
+    }

@@ -1,22 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="register">
+  <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Register</title>
+		<link rel="stylesheet" href="registration.css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  </head>
+	<body class="register">
 
-    <div class="row">
-        <div class="col">
-            <input type="text" class="form-control" placeholder="First Name" aria-label="First Name">
-        </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name">
-        </div>
-    </div>
-    
+		<div class="container text-center">
+			<div class="row">
+				<div class="col">
+					<section class="overlay">
+						<div class="registration-container">
+							<div class="row d-flex justify-content-center align-items-center">
+								<div class="col-lg-12 col-xl-11">
+									<div class="card text-black">
+										<div class="card-body p-md-5">
+											<div class="row justify-content-center">
+												<div class="col-md-10 col-lg-8 col-xl-7 order-2 order-lg-1">
+					
+													<h2 class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Create your account</h2>
+					
+													<form class="mx-1 mx-md-4">
+					
+														<div class="d-flex flex-row align-items-center mb-4">
+															<i class="fas fa-user fa-lg me-3 fa-fw"></i>
+															<div class="form-outline flex-fill mb-0">
+																<input type="text" id="firstName" class="form-control" placeholder="First Name" />
+															</div>
+														</div>
 
-</body>
+														<div class="d-flex flex-row align-items-center mb-4">
+																<i class="fas fa-user fa-lg me-3 fa-fw"></i>
+																<div class="form-outline flex-fill mb-0">
+																	<input type="text" id="lastName" class="form-control" placeholder="Last Name" />
+																</div>
+															</div>
+					
+														<div class="d-flex flex-row align-items-center mb-4">
+															<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+															<div class="form-outline flex-fill mb-0">
+																<input type="email" id="email" class="form-control" placeholder="Email Address" />
+															</div>
+														</div>
+					
+														<div class="d-flex flex-row align-items-center mb-4">
+															<i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+															<div class="form-outline flex-fill mb-0">
+																<input type="password" id="password" class="form-control" placeholder="Password"/>
+															</div>
+														</div>
+					
+														<div class="d-flex flex-row align-items-center mb-4">
+															<i class="fas fa-key fa-lg me-3 fa-fw"></i>
+															<div class="form-outline flex-fill mb-0">
+																<input type="password" id="confirmPassword" class="form-control" placeholder="Repeat your password"/>
+															</div>
+														</div>
+					
+														<div class="form-check d-flex justify-content-center mb-5">
+															<input class="form-check-input me-2" type="checkbox" value="" id="agree" />
+															<label class="form-check-label" for="agree">
+																I agree all statements in <a href="#!">Terms of service</a>
+															</label>
+														</div>
+					
+														<div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+															<button type="submit" class="btn btn-primary btn-lg">Register</button>
+														</div>
+					
+													</form>
+					
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="col">
+						<h1 style="color: red;">SIDE PANEL????</h1>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
