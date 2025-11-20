@@ -1,5 +1,7 @@
 body.register {
-    background: url("img/game-collage.jpg") no-repeat center center/cover;
+    background-image: url("img/fortnite.jpeg") no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
     font-family: Arial, sans-serif;
     color: white;
     height: 100vh;
@@ -12,14 +14,21 @@ body.index {
   }
   
   .overlay {
-    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100vh;
+    background: rgba(0,0,0,0.5); /* dark overlay for readability */
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    z-index: 1;
   }
 
+  .registration-container {
+    z-index: 2;
+  }
   .registration-container h2 {
     color: #111;
     font-weight: bold;

@@ -17,46 +17,55 @@
             align-items: center;
         }
         .overlay {
-            background: rgba(0,0,0,0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.7);
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
+            z-index: 1;
         }
         .login-card {
-            z-index: 1;
             border-radius: 15px; /* Rounded corners */
             background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 2rem;
+            color: #fff;
+            z-index: 2;
         }
     </style>
 </head>
 <body>
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <div class="card login-card">
-                    <div class="card-body">
-                        <h5 class="card-title text-center text-white">Log In</h5>
-                        <form>
-                            <div class="mb-3">
-                                <label for="email" class="form-label text-white">Email address</label>
-                                <input type="email" class="form-control" id="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label text-white">Password</label>
-                                <input type="password" class="form-control" id="password" required>
-                            </div>
-                            <div class="form-check mb-3">
-                                <input type="checkbox" class="form-check-input" id="rememberMe">
-                                <label class="form-check-label text-white" for="rememberMe">Remember me</label>
-                            </div>
-                            <button type="submit" class="btn btn-danger w-100">Login</button>
-                        </form>
-                        <p class="text-center text-white mt-3">
-                            Don't have an account? <a href="register.html" class="text-danger">Register here</a>
-                        </p>
+    <div class="overlay">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card login-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">Log In</h5>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label text-white">Email address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label text-white">Password</label>
+                                    <input type="password" class="form-control" id="password" required>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label text-white" for="rememberMe">Remember me</label>
+                                </div>
+                                <button type="submit" class="btn btn-danger w-100">Login</button>
+                            </form>
+                            <p class="text-center text-white mt-3">
+                                Don't have an account? <a href="register.html" class="text-danger">Register here</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

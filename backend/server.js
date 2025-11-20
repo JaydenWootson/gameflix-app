@@ -9,4 +9,6 @@ app.get("/", (req, res) => {
   res.send("GameFlix Auth API Running...");
 });
 
-app.listen(5000, () => console.log("Server running on http://localhost:8080"));
+// Use the PORT env var when available so we can override the default during development
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
